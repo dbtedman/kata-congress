@@ -18,6 +18,25 @@ nvm use && make
 
 ## Design
 
+### Domain Entities
+
+-   **Conference** - Enables existence of multiple conference iterations.
+-   **Exhibitor**
+-   **Page Hierarchy**
+-   **Presentation**
+-   **Presenter**
+-   **Registration**
+-   **Schedule**
+-   **Session**
+-   **Template** - Each page uses a template. Each template has access to different data, along with different customizations.
+-   **Theme** - Each iteration of a conference can have a different theme.
+-   **Timed Release** - Content can be shown and hidden on a schedule
+-   **Topic**
+-   **Track**
+-   **User** - Attendees, Presenters, Organizers.
+
+### Domain Use Cases
+
 > 🚧 Placeholder
 
 ## License
