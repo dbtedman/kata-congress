@@ -20,6 +20,8 @@ Install dependencies, execute verifications, and start a local development envir
 nvm use && make all local
 ```
 
+Then visit [http://localhost:8080](http://localhost:8080) in your browser.
+
 ## Design
 
 ### Tech Stack
