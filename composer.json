@@ -48,10 +48,10 @@
             "@php artisan key:generate --ansi"
         ],
         "lint": [
-            "@php phpcs --standard=PSR12 ./app ./config ./routes"
+            "@php phpcs -p --standard=PSR12 ./app ./config ./routes"
         ],
         "format": [
-            "@php phpcbf --standard=PSR12 ./app ./config ./routes"
+            "@php phpcbf -p --standard=PSR12 ./app ./config ./routes"
         ]
     },
     "extra": {
