@@ -9,6 +9,7 @@
 Platform for hosting reoccurring conference sites.
 
 -   [Getting Started](#getting-started)
+-   [Verification](#verification)
 -   [Design](#design)
 -   [License](#license)
 
@@ -21,6 +22,33 @@ nvm use && make all local
 ```
 
 Then visit [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Verification
+
+### Linting
+
+-   [Prettier](https://prettier.io)
+-   [PHP Code Sniffer](https://github.com/squizlabs/PHP_CodeSniffer)
+
+```shell
+make lint
+```
+
+These rules can then be automatically applied:
+
+```shell
+make format
+```
+
+### Unit Testing
+
+-   [PHPUnit](https://phpunit.de)
+
+```shell
+make test
+```
+
+Executes unit tests contained within the `tests/Unit` directory.
 
 ## Design
 
@@ -57,6 +85,10 @@ Then visit [http://localhost:8080](http://localhost:8080) in your browser.
 | `User`          | Attendees, Presenters, Organizers.                                                                          |
 
 ### Domain Use Cases
+
+> 🚧 Placeholder
+
+### Gateways
 
 > 🚧 Placeholder
 
