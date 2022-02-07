@@ -2,7 +2,9 @@
 
 > ⚠️ WARNING: Not production ready code.
 
-[![CI Results](https://github.com/dbtedman/kata-congress/workflows/ci/badge.svg)](https://github.com/dbtedman/kata-congress/actions?workflow=ci)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dbtedman/kata-congress/ci?style=for-the-badge&logo=github)
+![language: php](https://img.shields.io/badge/language-php-blue.svg?style=for-the-badge&logo=php)
+![framework: laravel](https://img.shields.io/badge/framework-laravel-red.svg?style=for-the-badge&logo=laravel)
 
 Platform for hosting reoccurring conference sites.
 

@@ -1,2 +1,7 @@
 # Commit files with correct line endings
 * text=auto eol=lf
+
+*.css linguist-vendored
+*.scss linguist-vendored
+*.js linguist-vendored
+CHANGELOG.md export-ignore
