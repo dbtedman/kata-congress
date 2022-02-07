@@ -7,48 +7,48 @@
 version: "3.7"
 
 services:
-  web:
-    build:
-      context: "."
-      dockerfile: "web.Dockerfile"
-    container_name: "congress_web"
-    restart: "always"
-    ports:
-      - "8080:80"
-    depends_on:
-      - "php"
-    volumes:
-      - "./public:/code/public/"
+    web:
+        build:
+            context: "."
+            dockerfile: "web.Dockerfile"
+        container_name: "congress_web"
+        restart: "always"
+        ports:
+            - "8080:80"
+        depends_on:
+            - "php"
+        volumes:
+            - "./public:/code/public/"
 
-  php:
-    build:
-      context: "."
-      dockerfile: "php.Dockerfile"
-    container_name: "congress_php"
-    restart: "always"
-    depends_on:
-      - "db"
-      - "cache"
-    volumes:
-      - "./:/code/"
+    php:
+        build:
+            context: "."
+            dockerfile: "php.Dockerfile"
+        container_name: "congress_php"
+        restart: "always"
+        depends_on:
+            - "db"
+            - "cache"
+        volumes:
+            - "./:/code/"
 
-  db:
-    build:
-      context: "."
-      dockerfile: "db.Dockerfile"
-    restart: "always"
-    container_name: "congress_db"
-    ports:
-      - "5432:5432"
-    environment:
-      POSTGRES_DB: "congress"
-      POSTGRES_USER: "congress"
-      POSTGRES_PASSWORD: "congress"
+    db:
+        build:
+            context: "."
+            dockerfile: "db.Dockerfile"
+        restart: "always"
+        container_name: "congress_db"
+        ports:
+            - "5432:5432"
+        environment:
+            POSTGRES_DB: "congress"
+            POSTGRES_USER: "congress"
+            POSTGRES_PASSWORD: "congress"
 
-  cache:
-    build:
-      context: "."
-      dockerfile: "cache.Dockerfile"
-    restart: "always"
-    container_name: "congress_cache"
-    command: "redis-server --requirepass congress"
+    cache:
+        build:
+            context: "."
+            dockerfile: "cache.Dockerfile"
+        restart: "always"
+        container_name: "congress_cache"
+        command: "redis-server --requirepass congress"

@@ -14,20 +14,26 @@ Platform for hosting reoccurring conference sites.
 
 ## Getting Started
 
+Install dependencies, execute verifications, and start a local development environment:
+
 ```shell
-nvm use && make
+nvm use && make all local
 ```
 
 ## Design
 
 ### Tech Stack
 
-- [Docker Desktop](https://www.docker.com/products/docker-desktopm)
-- [Laravel (v8)](https://laravel.com)
-- [Nginx](https://nginx.org/en/docs/)
-- [PHP (v8.1)](https://www.php.net/releases/8.1/en.php)
-- [PostgreSQL](https://www.postgresql.org)
-- [Redis](https://redis.io)
+-   [Docker Desktop](https://www.docker.com/products/docker-desktopm)
+-   [Laravel (v8)](https://laravel.com)
+-   [Nginx](https://nginx.org/en/docs/)
+-   [PHP (v8.1)](https://www.php.net/releases/8.1/en.php)
+-   [PostgreSQL](https://www.postgresql.org)
+-   [Redis](https://redis.io)
+
+### Coding Standards
+
+-   [PSR-12: Extended Coding Style](https://www.php-fig.org/psr/psr-12/)
 
 ### Domain Entities
 
