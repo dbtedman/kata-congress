@@ -39,20 +39,22 @@ Then visit [http://localhost:8080](http://localhost:8080) in your browser.
 
 ### Domain Entities
 
--   **Conference** - Enables existence of multiple conference iterations.
--   **Exhibitor**
--   **Page Hierarchy**
--   **Presentation**
--   **Presenter**
--   **Registration**
--   **Schedule**
--   **Session**
--   **Template** - Each page uses a template. Each template has access to different data, along with different customizations.
--   **Theme** - Each iteration of a conference can have a different theme.
--   **Timed Release** - Content can be shown and hidden on a schedule
--   **Topic**
--   **Track**
--   **User** - Attendees, Presenters, Organizers.
+| Entity          | Notes                                                                                                       |
+| :-------------- | :---------------------------------------------------------------------------------------------------------- |
+| `Conference`    | Enables existence of multiple conference iterations.                                                        |
+| `Exhibitor`     |                                                                                                             |
+| `PageHierarchy` |                                                                                                             |
+| `Presentation`  |                                                                                                             |
+| `Presenter`     |                                                                                                             |
+| `Registration`  |                                                                                                             |
+| `Schedule`      |                                                                                                             |
+| `Session`       |                                                                                                             |
+| `Template`      | Each page uses a template. Each template has access to different data, along with different customizations. |
+| `Theme`         | Each iteration of a conference can have a different theme.                                                  |
+| `TimedRelease`  | Content can be shown and hidden on a schedule.                                                              |
+| `Topic`         |                                                                                                             |
+| `Track`         |                                                                                                             |
+| `User`          | Attendees, Presenters, Organizers.                                                                          |
 
 ### Domain Use Cases
 
