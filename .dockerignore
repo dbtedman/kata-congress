@@ -1,0 +1,19 @@
+#-------------------------------------------------------------------------------
+#
+# Docker Ignore Configuration
+#
+#-------------------------------------------------------------------------------
+
+# NPM dependencies
+/node_modules/
+
+# Composer dependencies
+/vendor/
+
+# File storage and cache
+/storage/
+/bootstrap/cache/
+
+# IDE files
+/.idea/
+/*.iml

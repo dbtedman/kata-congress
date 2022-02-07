@@ -20,6 +20,15 @@ nvm use && make
 
 ## Design
 
+### Tech Stack
+
+- [Docker Desktop](https://www.docker.com/products/docker-desktopm)
+- [Laravel (v8)](https://laravel.com)
+- [Nginx](https://nginx.org/en/docs/)
+- [PHP (v8.1)](https://www.php.net/releases/8.1/en.php)
+- [PostgreSQL](https://www.postgresql.org)
+- [Redis](https://redis.io)
+
 ### Domain Entities
 
 -   **Conference** - Enables existence of multiple conference iterations.

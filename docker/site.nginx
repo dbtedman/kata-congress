@@ -1,0 +1,63 @@
+#-------------------------------------------------------------------------------
+#
+# NGINX Configuration
+#
+# @see https://laravel.com/docs/5.8/deployment
+#
+#-------------------------------------------------------------------------------
+server {
+    listen 80;
+    server_name localhost;
+    root /code/public;
+
+    add_header X-Frame-Options "SAMEORIGIN";
+    add_header X-XSS-Protection "1; mode=block";
+    add_header X-Content-Type-Options "nosniff";
+
+    index index.html index.htm index.php;
+
+    charset utf-8;
+
+    # Logging Configuration
+    error_log  /var/log/nginx/error.log;
+    access_log /var/log/nginx/access.log;
+
+    # GZip Configuration
+    gzip on;
+    gzip_http_version 1.0;
+    gzip_vary on;
+    gzip_comp_level 6;
+    gzip_proxied any;
+    gzip_types text/html application/javascript text/css;
+
+    location ~* \.(?:css|js)$ {
+        expires 1y;
+        add_header Cache-Control "public";
+    }
+
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    location = /favicon.ico {
+        access_log off;
+        log_not_found off;
+    }
+    location = /robots.txt  {
+        access_log off;
+        log_not_found off;
+    }
+
+    error_page 404 /index.php;
+
+    location ~ \.php$ {
+        fastcgi_pass php:9000;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
+        include fastcgi_params;
+    }
+
+    location ~ /\.(?!well-known).* {
+        deny all;
+    }
+}
