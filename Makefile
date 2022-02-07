@@ -1,9 +1,13 @@
 .DEFAULT_GOAL := all
 
-all: install lint test
+all: install post_install lint test
 
 install:
 	@composer install && pnpm install
+
+post_install:
+	@composer run post-root-package-install \
+		&& composer run post-create-project-cmd
 
 lint:
 	@composer run lint && pnpm run lint
