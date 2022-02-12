@@ -2,7 +2,7 @@
 
 > ⚠️ WARNING: Not production ready code.
 
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dbtedman/kata-congress/ci?style=for-the-badge&logo=github)](https://github.com/dbtedman/kata-congress/actions/workflows/cy.yml?query=branch%3Amain)
+[![CI GitHub Pipeline](https://img.shields.io/github/workflow/status/dbtedman/kata-congress/ci?style=for-the-badge&logo=github&label=ci)](https://github.com/dbtedman/kata-congress/actions/workflows/ci.yml?query=branch%3Amain)
 ![language: php](https://img.shields.io/badge/language-php-blue.svg?style=for-the-badge&logo=php)
 ![framework: laravel](https://img.shields.io/badge/framework-laravel-red.svg?style=for-the-badge&logo=laravel)
 
