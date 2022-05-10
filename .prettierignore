@@ -2,6 +2,7 @@
 /node_modules/
 /vendor/
 /pnpm-lock.yaml
+/composer.lock
 
 # Don't touch IDE configuraiton
 /.idea/
