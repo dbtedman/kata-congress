@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------------------------------------
 
-FROM redis:5.0.12
+FROM redis:5-bullseye
 
 RUN apt-get update \
   && apt-get upgrade -y \
