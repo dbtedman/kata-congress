@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------------------------------------
 
-FROM nginx:1.20
+FROM nginx:stable
 
 COPY ./ /code
 COPY ./docker/site.nginx /etc/nginx/conf.d/default.conf
