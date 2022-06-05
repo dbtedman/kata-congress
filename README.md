@@ -1,6 +1,7 @@
-# [Kata](https://github.com/dbtedman/kata) // [Congress](https://github.com/dbtedman/kata-congress)
+# [Congress](https://github.com/dbtedman/kata-congress)
 
-> ⚠️ WARNING: Not production ready code.
+> **⚠️ WARNING:** Not production ready code, instead a [Code Kata](https://github.com/dbtedman#code-kata) intended to
+> hone my programming skills through practice and repetition.
 
 [![CI GitHub Pipeline](https://img.shields.io/github/workflow/status/dbtedman/kata-congress/ci?style=for-the-badge&logo=github&label=ci)](https://github.com/dbtedman/kata-congress/actions/workflows/ci.yml)
 [![sast workflow status](https://img.shields.io/github/workflow/status/dbtedman/kata-congress/sast?style=for-the-badge&logo=github&label=sast)](https://github.com/dbtedman/kata-congress/actions/workflows/sast.yml)
@@ -12,6 +13,7 @@ Platform for hosting reoccurring conference sites.
 -   [Getting Started](#getting-started)
 -   [Verification](#verification)
 -   [Design](#design)
+-   [References](#references)
 -   [License](#license)
 
 ## Getting Started
@@ -68,30 +70,69 @@ Executes unit tests contained within the `tests/Unit` directory.
 
 ### Domain Entities
 
-| Entity          | Notes                                                                                                       |
-| :-------------- | :---------------------------------------------------------------------------------------------------------- |
-| `Conference`    | Enables existence of multiple conference iterations.                                                        |
-| `Exhibitor`     |                                                                                                             |
-| `PageHierarchy` |                                                                                                             |
-| `Presentation`  |                                                                                                             |
-| `Presenter`     |                                                                                                             |
-| `Registration`  |                                                                                                             |
-| `Schedule`      |                                                                                                             |
-| `Session`       |                                                                                                             |
-| `Template`      | Each page uses a template. Each template has access to different data, along with different customizations. |
-| `Theme`         | Each iteration of a conference can have a different theme.                                                  |
-| `TimedRelease`  | Content can be shown and hidden on a schedule.                                                              |
-| `Topic`         |                                                                                                             |
-| `Track`         |                                                                                                             |
-| `User`          | Attendees, Presenters, Organizers.                                                                          |
+#### Conference
+
+Enables existence of multiple conference iterations.
+
+#### Exhibitor
+
+_Placeholder_
+
+#### PageHierarchy
+
+_Placeholder_
+
+#### Presentation
+
+_Placeholder_
+
+#### Presenter
+
+_Placeholder_
+
+#### Registration
+
+_Placeholder_
+
+#### Schedule
+
+_Placeholder_
+
+#### Session
+
+_Placeholder_
+
+#### Template
+
+Each page uses a template. Each template has access to different data, along with different customizations.
+
+#### Theme
+
+Each iteration of a conference can have a different theme.
+
+#### TimedRelease
+
+Content can be shown and hidden on a schedule.
+
+#### Topic
+
+_Placeholder_
+
+#### Track
+
+_Placeholder_
+
+#### User
+
+Attendees, Presenters, Organizers.
 
 ### Domain Use Cases
 
-> 🚧 Placeholder
+_Placeholder_
 
 ### Gateways
 
-> 🚧 Placeholder
+_Placeholder_
 
 ### Security Mitigations
 
@@ -134,6 +175,10 @@ _Placeholder_
 _Placeholder_
 
 #### [A10:2021-Server-Side Request Forgery](https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/)
+
+_Placeholder_
+
+## References
 
 _Placeholder_
 
