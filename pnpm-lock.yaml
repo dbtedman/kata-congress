@@ -2,11 +2,11 @@ lockfileVersion: 5.4
 
 specifiers:
   prettier: 2.6.2
-  sort-package-json: 1.56.1
+  sort-package-json: 1.57.0
 
 devDependencies:
   prettier: 2.6.2
-  sort-package-json: 1.56.1
+  sort-package-json: 1.57.0
 
 packages:
 
@@ -262,8 +262,8 @@ packages:
     resolution: {integrity: sha512-855pvK+VkU7PaKYPc+Jjnmt4EzejQHyhhF33q31qG8x7maDzkeFhAAThdCYay11CISO+qAMwjOBP+fPZe0IPyg==}
     dev: true
 
-  /sort-package-json/1.56.1:
-    resolution: {integrity: sha512-UpMvN+D7Pmn3ruQd+LfO67EBtDf/k79bL3DZ9CCq4BVf5mAV2Z0xHoZkYUUKRE6NsX0liQloyGUmRQZjbxUCig==}
+  /sort-package-json/1.57.0:
+    resolution: {integrity: sha512-FYsjYn2dHTRb41wqnv+uEqCUvBpK3jZcTp9rbz2qDTmel7Pmdtf+i2rLaaPMRZeSVM60V3Se31GyWFpmKs4Q5Q==}
     hasBin: true
     dependencies:
       detect-indent: 6.1.0
