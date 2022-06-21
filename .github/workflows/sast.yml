@@ -31,6 +31,7 @@ jobs:
                   tools: "composer"
             - uses: "snyk/actions/setup@master"
             - run: "make install"
-            - run: "snyk test --all-projects --detection-depth=1"
+            # https://docs.snyk.io/introducing-snyk/snyks-core-concepts/severity-levels
+            - run: "snyk test --all-projects --detection-depth=1 --severity-threshold=high"
               env:
                   SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
