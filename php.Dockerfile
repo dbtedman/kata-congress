@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------------------------------------
 
-FROM php:8.1.7RC1-fpm
+FROM php:8.1.7-fpm
 
 ENV PHP_OPCACHE_VALIDATE_TIMESTAMPS="1" \
     PHP_OPCACHE_MAX_ACCELERATED_FILES="10000" \
