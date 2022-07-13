@@ -7,6 +7,7 @@
 [![sast workflow status](https://img.shields.io/github/workflow/status/dbtedman/kata-congress/sast?style=for-the-badge&logo=github&label=sast)](https://github.com/dbtedman/kata-congress/actions/workflows/sast.yml)
 ![language: php](https://img.shields.io/badge/language-php-blue.svg?style=for-the-badge)
 ![framework: laravel](https://img.shields.io/badge/framework-laravel-blue.svg?style=for-the-badge)
+[![MIT License](https://img.shields.io/github/license/dbtedman/kata-congress?color=orange&style=for-the-badge)](https://github.com/dbtedman/kata-congress/blob/main/LICENSE.md)
 
 Platform for hosting reoccurring conference sites.
 
